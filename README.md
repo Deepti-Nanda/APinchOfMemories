@@ -79,7 +79,7 @@ git clone https://github.com/your-username/a-pinch-of-memories.git
 ### Navigate to the project
 
 ```bash
-cd a-pinch-of-memories
+cd APinchOfMemories
 ```
 
 ### Run the website
