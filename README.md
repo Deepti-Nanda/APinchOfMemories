@@ -59,12 +59,12 @@ The project focuses on presenting recipes in a simple and inviting way, allowing
 
 ## 🛠️ Technologies Used
 
-| Technology           | Purpose                    |
-| -------------------- | -------------------------- |
-| 🧱 HTML5             | Website structure          |
-| 🎨 CSS3              | Styling and layouts        |
-| 📱 Responsive Design | Mobile-friendly experience |
-| 🖼️ Images           | Recipe presentation        |
+| Technology        | Purpose                    |
+| ------------------| -------------------------- |
+| HTML5             | Website structure          |
+| CSS3              | Styling and layouts        |
+| Responsive Design | Mobile-friendly experience |
+| Images            | Recipe presentation        |
 
 ---
 
@@ -73,7 +73,7 @@ The project focuses on presenting recipes in a simple and inviting way, allowing
 ### Clone the repository
 
 ```bash
-git clone https://github.com/your-username/a-pinch-of-memories.git
+[git clone https://https://github.com/Deepti-Nanda/APinchOfMemories)
 ```
 
 ### Navigate to the project
