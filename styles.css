@@ -1,0 +1,440 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, serif;
+    background-color: rgb(174, 137, 143);
+    color: #3d2b1f;
+    text-align: center;
+}
+
+main {
+    padding: 70px;
+}
+
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #a28673;
+    z-index: 1000;
+}
+
+.site-header h1 {
+    position: absolute;
+    top: 38px;
+    right: 50px;
+    margin: 0;
+    color: #3d2b1f;
+    font-size: 42px;
+    text-align: right;
+}
+
+.site-logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.site-logo img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.navbar {
+    margin-left: auto;
+    background-color: transparent;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.main-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.auth-links {
+    position: absolute;
+    top: 50px;
+    left: 125px;
+    display: flex;
+    gap: 20px;
+
+}
+
+.nav-links a {
+    color: rgb(4, 66, 43);
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.auth-links a {
+    color: rgb(4, 66, 43);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.auth-links a:hover {
+    text-decoration: underline;
+}
+
+.signup-link {
+    border: 1px solid rgb(4, 66, 43);
+    padding: 8px 14px;
+    border-radius: 6px;
+}
+
+.signup-link:hover {
+    background-color: rgb(4, 66, 43);
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.subtitle {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.intro {
+    padding: 80px 20px;
+}
+
+.intro h2 {
+    margin-bottom: 15px;
+}
+
+.intro p {
+    max-width: 700px;
+    margin: 10px auto;
+    line-height: 1.6;
+}
+
+.tagline {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.category {
+    width: 300px;
+}
+
+.category img {
+    width: 80%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 25px;
+    transition: transform 0.3s ease;
+}
+
+.category img:hover {
+    transform: scale(1.15);
+}
+
+.category h3 {
+    margin-top: 15px;
+    font-size: 24px;
+}
+
+.category p {
+    margin-top: 8px;
+}
+
+.recipe-header {
+    text-align: center;
+    padding: 160px 20px 40px;
+}
+
+.recipe-header h1 {
+    font-size: 48px;
+    margin-bottom: 12px;
+}
+
+.recipe-section {
+    max-width: 1200px;
+    margin: 20px auto 50px;
+    padding: 30px 50px;
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.recipe {
+    flex: 1;
+    text-align: left;
+    min-width: 0;
+
+}
+
+.recipe h2 {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.recipe ul,
+.recipe ol {
+    padding-left: 25px;
+}
+
+.recipe li {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+.recipe-image {
+    flex: 0 0 400px;
+    position: sticky;
+    top: 140px;
+}
+
+.recipe-image img {
+    width: 550px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.auth-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 9%;
+    background-image:
+        linear-gradient(rgba(174, 137, 143, 0.55),
+            rgba(174, 137, 143, 0.55)),
+        url("src/bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.auth-intro {
+    width: 52%;
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(245, 232, 232, 0.18);
+    border-radius: 20px;
+}
+
+.auth-logo {
+    position: fixed !important;
+    top: 20px !important;
+    left: 20px !important;
+    width: 100px !important;
+    height: 100px !important;
+    object-fit: contain !important;
+    border-radius: 50% !important;
+    z-index: 99999 !important;
+}
+
+.auth-intro h1 {
+    font-size: 42px;
+    color: #3d2b1f;
+    margin-bottom: 12px;
+}
+
+.auth-intro p {
+    max-width: 450px;
+    margin: 0 auto 18px;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 1.6;
+    color: #3d2b1f;
+}
+
+.auth-intro span {
+    font-size: 21px;
+    font-weight: bold;
+    color: #3d2b1f;
+}
+
+.auth-card {
+    width: 390px;
+    padding: 38px 42px;
+    background-color: #f5e8e8;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(61, 43, 31, 0.2);
+}
+
+.auth-form h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #3d2b1f;
+    margin-bottom: 8px;
+}
+
+.form-subtitle {
+    text-align: center;
+    color: #6b5148;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+.auth-form label {
+    display: block;
+    color: #3d2b1f;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.auth-form input {
+    width: 100%;
+    height: 45px;
+    padding: 0 13px;
+    margin-bottom: 17px;
+    border: 1px solid #b89a9f;
+    border-radius: 8px;
+    background-color: white;
+    color: #3d2b1f;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.auth-form input::placeholder {
+    color: #9b8588;
+}
+
+.auth-form input:focus {
+    border-color: rgb(143, 24, 24);
+    box-shadow: 0 0 0 2px rgba(143, 24, 24, 0.08);
+}
+
+.forgot-password {
+    text-align: right;
+    margin-top: -7px;
+    margin-bottom: 18px;
+}
+
+.forgot-password a {
+    color: rgb(143, 24, 24);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.auth-form button {
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(143, 24, 24);
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.auth-form button:hover {
+    background-color: rgb(120, 20, 20);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(61, 43, 31, 0.2);
+}
+
+.switch-form {
+    text-align: center;
+    margin-top: 25px;
+    color: #3d2b1f;
+    font-size: 14px;
+}
+
+.switch-form a {
+    color: rgb(143, 24, 24);
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.switch-form a:hover {
+    text-decoration: underline;
+}
+
+#signupMessage,
+#loginMessage {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.success-message {
+    color: #04662b;
+}
+
+.error-message {
+    color: rgb(143, 24, 24);
+}
+
+.welcome-user {
+    color: rgb(4, 66, 43);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#logoutLink {
+    color: rgb(143, 24, 24);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#logoutLink:hover {
+    color: rgb(120, 20, 20);
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 30px 20px;
+    background-color: #3d2b1f;
+    color: white;
+}
+
+footer p {
+    background-color: #3d2b1f;
+    max-width: 800px;
+    margin: 10px auto;
+    line-height: 1.6;
+}

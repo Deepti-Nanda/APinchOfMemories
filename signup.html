@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | A Pinch of Memories</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="auth-page">
+        <section class="auth-intro">
+            <img src="src/logo.png" alt="A Pinch of Memories Logo" class="auth-logo">
+            <h1>A Pinch of Memories</h1>
+            <p>
+                Because the best recipes are the ones we remember.
+            </p>
+            <span>
+                Taste. Cook. Remember. ♥
+            </span>
+        </section>
+        <section class="auth-card">
+            <div class="auth-form">
+                <h2>Create Account</h2>
+                <p class="form-subtitle">
+                    Join us and start creating delicious memories.
+                </p>
+                <form id="signupForm">
+                    <label for="name">
+                        Full Name
+                    </label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    <label for="email">
+                        Email
+                    </label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <label for="password">
+                        Password
+                    </label>
+                    <input type="password" id="password" name="password" placeholder="Create a password" required>
+                    <label for="confirm-password">
+                        Confirm Password
+                    </label>
+                    <input type="password" id="confirm-password" name="confirm-password"
+                        placeholder="Confirm your password" required>
+                    <button type="submit">
+                        Sign Up
+                    </button>
+                </form>
+                <p id="signupMessage"></p>
+                <p class="switch-form">
+                    Already have an account?
+                    <a href="login.html">
+                        Login
+                    </a>
+                </p>
+            </div>
+        </section>
+    </main>
+    <script src="js/signup.js"></script>
+</body>
+</html>

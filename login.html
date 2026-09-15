@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | A Pinch of Memories</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="auth-page">
+        <section class="auth-intro">
+            <img src="src/logo.png" alt="A Pinch of Memories Logo" class="auth-logo">
+            <h1>A Pinch of Memories</h1>
+            <p>
+                Because the best recipes are the ones we remember.
+            </p>
+            <span>
+                Taste. Cook. Remember. ♥
+            </span>
+        </section>
+        <section class="auth-card">
+            <div class="auth-form">
+                <h2>Welcome Back!</h2>
+                <p class="form-subtitle">
+                    Login to continue your culinary journey.
+                </p>
+                <form id="loginForm">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                    <div class="forgot-password">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit">
+                        Login
+                    </button>
+                </form>
+                <p id="loginMessage"></p>
+                <p class="switch-form">
+                    Don't have an account?
+                    <a href="signup.html">Sign Up</a>
+                </p>
+            </div>
+        </section>
+    </main>
+    <script src="js/login.js"></script>
+</body>
+</html>
